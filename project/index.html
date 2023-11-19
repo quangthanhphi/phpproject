@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foot Locker</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Your Website</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T1haeVddWSSrkvzU9/BK8GGHvuU5oSpsotIiQF46SPBmg1FmAKaR6E9V/mq5JsUH" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header Section Begin -->
+    <header>
+        <div class="top-bar">
+            <div class="logo">
+                <a href="/" class="logo-link">
+                    <span class="logo-img">
+                        <img src="./img/logo.svg" alt="Your Logo">
+                    </span>
+                </a>
+            </div>
+            <div class="search-bar">
+                <form id="HeaderSearch" role="search" action="/search" novalidate=""
+                    class="SearchForm SearchForm-prominent c-form Form gutterV-2">
+                    <div role="alert" tabindex="-1" class="visually-hidden"></div>
+                    <input type="search" name="query" value="" aria-haspopup="true" aria-expanded="false"
+                        aria-controls="typeahead" aria-label="Search" aria-autocomplete="list"
+                        id="HeaderSearch_search_query" role="combobox" maxLength="100" placeholder="Search"
+                        autoComplete="off" />
+
+                    <div class="InputHelper-close hide">
+                        <button aria-label="Clear Search field text" class="SearchForm-clear" type="button">
+                            <span class="Icon Icon--close SearchForm-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-search" viewBox="0 0 16 16">
+                                    <path
+                                        d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                                </svg>
+                            </span>
+                        </button>
+                    </div>
+                    <div class="InputHelper">
+                        <button aria-label="Search submit" class="SearchForm-button">
+                            <span class="Icon Icon--search SearchForm-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-search" viewBox="0 0 16 16">
+                                    <path
+                                        d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                                </svg>
+                            </span>
+                        </button>
+                    </div>
+                </form>
+            </div>
+
+            <div class="login header-link header-user">
+                <span class="Icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-person" viewBox="0 0 16 16">
+                        <path
+                            d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4Zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10Z" />
+                    </svg>
+                </span>
+                <button type="button" class="header-link">Welcome, Sign In</button>
+            </div>
+        </div>
+
+        <nav aria-label="Primary" class="nav-bar">
+            <div class="col HeaderNavigation" role="toolbar">
+                <div class="Navigation-item">
+                    <a href="./new.html" class="Navigation-link" target="_self">
+                        <span>NEW ARRIVALS</span>
+                    </a>
+                </div>
+                <div class="Navigation-item">
+                    <a href="" class="Navigation-link" target="_self">
+                        <span>MEN'S</span>
+                    </a>
+                </div>
+                <div class="Navigation-item">
+                    <a href="" class="Navigation-link" target="_self">
+                        <span>WOMEN'S</span>
+                    </a>
+                </div>
+                <div class="Navigation-item">
+                    <a href="" class="Navigation-link" target="_self">
+                        <span>KIDS'</span>
+                    </a>
+                </div>
+            </div>
+            <div class="nav-icon-container">
+                <button class="favorite ">
+                    <span class="Icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-heart" viewBox="0 0 16 16">
+                            <path
+                                d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
+                        </svg>
+                    </span>
+                </button>
+                <a href="" class="cart">
+                    <span class="Icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-cart" viewBox="0 0 16 16">
+                            <path
+                                d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+                        </svg>
+                    </span>
+                    <span aria-hidden="true" class="CartCount-badge"></span>
+                </a>
+            </div>
+        </nav>
+    </header>
+    <!-- Header Section End -->
+
+    <!-- Your content goes here -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-eNpXf8CI8UwybP1SbBKRvA8BjUYB/UHwrChKc/D/AiS2JXpaePjJr9Jz3kFAiYDz" crossorigin="anonymous"></script>
+</body>
+</html>
+
+    <main>
+        <div class="page-wrapper">
+            <div class="page-content">
+                <div class="page-theme">
+                    <a href="" class="link">
+                        <span>
+                            <picture>
+                                <img alt="RESERVE NOW" class="Hero-image" loading="lazy"
+                                    src="./img/shop-basketball.webp" height="300" width="1600">
+                            </picture>
+                        </span>
+                        <div class="button-container">
+                            <span class="button-text">SHOP BASKETBALL</span>
+                            <span class="page-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-chevron-right" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                                </svg>
+                            </span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="page-content-3">
+                <ul class="item-container">
+                    <li class="item-content">
+                        <div class="item-description">
+                            <a href="" class="item-link">
+                                <span>
+                                    <picture>
+                                        <img class="item-img" src="./img/boots.webp" alt="" height="800" width="800">
+                                    </picture>
+                                </span>
+                            </a>
+                            <div class="item-name">
+                                <h2>Step Into New Boots</h2>
+                                <div class="item-btn-group">
+                                    <a href="">
+                                        <span>SHOP BOOTS</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="item-content">
+                        <div class="item-description">
+                            <a href="" class="item-link">
+                                <span>
+                                    <picture>
+                                        <img class="item-img" src="./img/running.webp" alt="" height="800" width="800">
+                                    </picture>
+                                </span>
+                            </a>
+                            <div class="item-name">
+                                <h2>Made to Last Miles</h2>
+                                <div class="item-btn-group">
+                                    <a href="">
+                                        <span>SHOP RUNNING</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="item-content">
+                        <div class="item-description">
+                            <a href="" class="item-link">
+                                <span>
+                                    <picture>
+                                        <img class="item-img" src="./img/clothign.webp" alt="" height="800" width="800">
+                                    </picture>
+                                </span>
+                            </a>
+                            <div class="item-name">
+                                <h2>Layer Up All Season</h2>
+                                <div class="item-btn-group">
+                                    <a href="">
+                                        <span>SHOP CLOTHING</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+
+
+    </main>
+    <footer class="text-center text-lg-start text-white"
+        style="background-color:#0e1111; padding-top: 8px; font-family: 'Roboto', Arial, sans-serif;">
+        <!-- Section: Links  -->
+        <section class="" style="border-bottom: 1px outset gray;">
+            <div class="container text-center text-md-start mt-5">
+                <!-- Grid row -->
+                <div class="row mt-3">
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                        <!-- Content -->
+                        <h6 class="text-uppercase fw-bold">FOOTLOCKER</h6>
+                        <hr class="mb-4 mt-0 d-inline-block mx-auto"
+                            style="width: 60px; background-color: black; height: 2px" />
+                        <p style="font-size: 0.875rem;
+                        font-weight: 500;">
+                            Foot Locker, Inc. has a strong history of sneaker authority that
+                            sparks discovery and ignites the power of sneaker culture through its portfolio of brands,
+                            including Foot Locker, Kids Foot Locker, Champs Sports, WSS, and atmos.
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold">CUSTOMER SERVICE</h6>
+                        <hr class="mb-4 mt-0 d-inline-block mx-auto"
+                            style="width: 60px; background-color: black; height: 2px" />
+                        <p>
+                            <a href="#!" class="text-white" style="text-decoration: none; font-size: 0.875rem;
+    font-weight: 500; ">CONTACT US</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-white" style="text-decoration: none; font-size: 0.875rem;
+    font-weight: 500;">ORDERING HELP</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-white" style="text-decoration: none; font-size: 0.875rem;
+    font-weight: 500;">COVID-19 INFORMATION</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-white" style="text-decoration: none; font-size: 0.875rem;
+    font-weight: 500;">ABOUT US</a>
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold">USEFUL LINKS</h6>
+                        <hr class="mb-4 mt-0 d-inline-block mx-auto"
+                            style="width: 60px; background-color: black; height: 2px" />
+                        <p>
+                            <a href="#!" class="text-white" style="text-decoration: none; font-size: 0.875rem;
+    font-weight: 500;">Product sitemap</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-white" style="text-decoration: none; font-size: 0.875rem;
+    font-weight: 500;">Release Calendar</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-white" style="text-decoration: none; font-size: 0.875rem;
+    font-weight: 500;">Shipping Rates</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-white" style="text-decoration: none; font-size: 0.875rem;
+    font-weight: 500;">Help</a>
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold">Contact</h6>
+                        <hr class="mb-4 mt-0 d-inline-block mx-auto"
+                            style="width: 60px; background-color: black; height: 2px" />
+                        <p style="font-size: 0.875rem;
+                        font-weight: 500;"><i class="fas fa-home mr-3"></i> New York, NY 10012, US</p>
+                        <p style="font-size: 0.875rem;
+                        font-weight: 500;"><i class="fas fa-envelope mr-3"></i> info@example.com</p>
+                        <p style="font-size: 0.875rem;
+                        font-weight: 500;"><i class="fas fa-phone mr-3"></i> + 01 234 567 88</p>
+                        <p style="font-size: 0.875rem;
+                        font-weight: 500;"><i class="fas fa-print mr-3"></i> + 01 234 567 89</p>
+                    </div>
+                    <!-- Grid column -->
+                </div>
+                <!-- Grid row -->
+            </div>
+        </section>
+        <!-- Section: Links  -->
+
+
+
+        <div class="Footer-main">
+            <div class="constrained">
+                <div class="row">
+                    <div class="col2">
+                        <a href="/" class="FooterLogo"><img src="./img/logo.svg"
+                                alt="Foot Locker logo links to the home page" class="Logo-image"></a>
+                        <p class="Copyright font-caption">© 2023 Footlocker.com, Inc. All Rights Reserved</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
